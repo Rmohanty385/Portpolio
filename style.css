@@ -35,7 +35,7 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .Project, .contact, footer{
+.about, .services, .skills, .Projects, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
@@ -258,14 +258,16 @@ section .title::after{
 }
 
 /* services section styling */
-.services{
+.services,.Projects{
     color:#fff;
     background: #111;
 }
-.services .title::before{
+.services .title::before,
+.Projects .title::before{
     background: #fff;
 }
-.services .title::after{
+.services .title::after,
+.Projects .title::after{
     background: #111;
     content: "what i provide";
 }
@@ -383,10 +385,10 @@ section .title::after{
 }
 
 /* Projects section styling */
-.Project .title::after{
+.Projects.title::after{
     content: -"what I have done"-;
 }
-.Project .carousel .card{
+.Projects .carousel .card{
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
@@ -394,25 +396,25 @@ section .title::after{
     overflow: hidden;
     transition: all 0.3s ease;
 }
-.Project .carousel .card:hover{
+.Projects.carousel .card:hover{
     background: crimson;
 }
-.Project .carousel .card .box{
+.Projects .carousel .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.Project .carousel .card:hover .box{
+.Projects .carousel .card:hover .box{
     transform: scale(1.05);
 }
-.Project .carousel .card .text{
+.Projects .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.Project .carousel .card img{
+.Projects .carousel .card img{
     height: 150px;
     width: 150px;
     object-fit: cover;
@@ -420,7 +422,7 @@ section .title::after{
     border: 5px solid crimson;
     transition: all 0.3s ease;
 }
-.Project .carousel .card:hover img{
+.Projects .carousel .card:hover img{
     border-color: #fff;
 }
 .owl-dots{
